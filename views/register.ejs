@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <!-- <link rel="stylesheet" href="../public/css/style.css" /> -->
+  </head>
+  
+    <%- include('./layout'); %>
+
+  <body>
+    <div class="container">
+
+      <div class="register">
+        <h1>Register here</h1>
+        <form action="/register" method="POST">
+          <input type="text" name="title"  /><br />
+          <textarea name="body" id="body" rows="10"></textarea><br />
+
+          <input type="submit" class="btn first" value="regiter" />
+        </form>
+      
+      </div>
+    </div>
+  </body>
+</html>
